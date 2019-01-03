@@ -7,10 +7,14 @@
   <body>
     <script>
       /*
-        KEYWORD: Temporal Dead Zone
+        KEYWORD #1: Temporal Dead Zone
+          `var` variable can be access before it defined while `const` & `let`
+          cant
 
-        `var` variable can be access before it defined while `const` & `let`
-        cant
+        KEYWORD #2: When to use `var`
+          * use `const` by default
+          * only use `let` if rebinding is needed
+          * (var shouldn't be used in ES6)
       */
       console.log(pizza); // undefined `variable`
       var pizza = 'deep dish pizza';
