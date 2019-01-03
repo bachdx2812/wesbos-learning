@@ -1,0 +1,44 @@
+<<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>let and const</title>
+  </head>
+  <body>
+    <script>
+      /*
+        KEYWORD: variable mutatation
+
+        The `const` variable cannot be reassign for recreate
+        but the attributes of `const` object still can be changed
+      */
+
+      const key = 'abc123';
+      let points = 50;
+      let winner = false;
+
+      const person = {
+        name: 'bachdx',
+        age: 28
+      }
+
+      const wes = Object.freeze(person);
+
+      console.log("change the freezed object")
+      console.log(`before : ${wes.age}`); // 28
+      wes.age = 30;
+      console.log(`after: ${wes.age}`); // 28
+
+      const person2 = {
+        name: 'bachdx',
+        age: 28
+      }
+
+      console.log("Change the object `person` without freeze");
+      console.log(`before : ${person2.age}`); // 28
+      person2.age = 30;
+      console.log(`after: ${person2.age}`); // 30
+
+    </script>
+  </body>
+</html>
