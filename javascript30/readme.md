@@ -1,6 +1,1 @@
-# Day 1: Drum kit
-
-![Screenshot](drum-kit.png)
-
-# How to play:
-Press A, F, G, H, J, K, L and listen to the sound. Enjoy!
+![](https://javascript30.com/images/JS3-social-share.png)
