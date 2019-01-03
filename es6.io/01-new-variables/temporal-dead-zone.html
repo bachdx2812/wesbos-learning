@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script>
+      /*
+        KEYWORD: Temporal Dead Zone
+
+        `var` variable can be access before it defined while `const` & `let`
+        cant
+      */
+      console.log(pizza); // undefined `variable`
+      var pizza = 'deep dish pizza';
+
+      console.log(anotherPizza); // Uncaught ReferenceError
+      let anotherPizza = 'Yet another Pizza';
+    </script>
+  </body>
+</html>

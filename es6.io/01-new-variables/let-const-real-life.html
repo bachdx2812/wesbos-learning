@@ -1,4 +1,4 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -31,7 +31,30 @@
       }
       console.log(window.name); // ""
 
+      for(var i = 0; i < 10; i++ ) {
+        // console.log(i); // 1-> 9
+        setTimeout(function() {
+          console.log(i); // all will be 10
+        }, 1000);
+      }
+      // after the loop
+      console.log(i); // 10
 
+      /*
+       in case of using something like ajax which
+       take time to process. Using let would be
+       better for 2 reasons
+       1. the temparary `j` variable wont be leak out
+       2. the `ajax` will have the exact variable of j
+      */
+      for(let j = 0; j < 10; j++ ) {
+        // console.log(j); // 1-> 9
+        setTimeout(function() {
+          console.log(j); // 1 -> 9
+        }, 1000);
+      }
+      // after the loop
+      console.log(j); // undefined error
     </script>
   </body>
 </html>
